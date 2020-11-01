@@ -34,6 +34,10 @@ namespace ServerLoginLibrary
         {
             // sprzątanie
         }
+        /// <summary>
+        /// Sprawdzanie czy login jest jednym z możliwych i odsyłanie odpowiedniego komunikatu
+        /// </summary>
+        /// <param name="stream"></param>
         protected override void BeginDataTransmission(NetworkStream stream)
         {
             byte[] buffer = new byte[Buffer_size];
